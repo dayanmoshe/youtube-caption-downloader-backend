@@ -1,2 +1,2 @@
 # youtube-caption-downloader-backend
-Python backend to process 
+Python backend for YouTube Caption Downloader API using Flask/FastAPI

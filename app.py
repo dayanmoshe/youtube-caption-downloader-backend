@@ -8,7 +8,7 @@ from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, Tran
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": "https://dayanmoshe.github.io/youtube-caption-downloader-frontend/"}}) # Permite ualquer origem por enquanto!
+CORS(app, resources={r"/*": {"origins": "https://dayanmoshe.github.io/youtube-caption-downloader-frontend/"}}) 
 
 @app.route('/download_transcript', methods=['POST'])
 def download_transcript():

@@ -8,10 +8,7 @@ from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, Tran
 
 app = Flask(__name__)
 
-# Para o PRIMEIRO DEPLOY NO RENDER:
-# Vamos permitir TEMPORARIAMENTE todas as origens para facilitar.
-
-CORS(app, resources={r"/*": {"origins": "https://dayanmoshe.github.io/youtube-caption-downloader-frontend/", "http://localhost:8080"}}) # Permite ualquer origem por enquanto!
+CORS(app, resources={r"/*": {"origins": "https://dayanmoshe.github.io/youtube-caption-downloader-frontend/"}}) # Permite ualquer origem por enquanto!
 
 @app.route('/download_transcript', methods=['POST'])
 def download_transcript():

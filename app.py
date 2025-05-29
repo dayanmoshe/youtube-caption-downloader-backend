@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Para o PRIMEIRO DEPLOY NO RENDER:
 # Vamos permitir TEMPORARIAMENTE todas as origens para facilitar.
 # Assim que tivermos a URL do GitHub Pages, vamos RESTRINGIR isso.
-CORS(app, resources={r"/*": {"origins": "*"}}) # Permite qualquer origem por enquanto!
+CORS(app, resources={r"/*": {"origins": "https://dayanmoshe.github.io/youtube-caption-downloader-frontend/", "http://localhost:8000"}}) # Permite qualquer origem por enquanto!
 
 @app.route('/download_transcript', methods=['POST'])
 def download_transcript():
